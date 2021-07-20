@@ -13,6 +13,7 @@ public class ClinitTest1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(Son.B);
+        // 加载Father类, 然后加载Son类
+        System.out.println(Son.B); // 2
     }
 }
