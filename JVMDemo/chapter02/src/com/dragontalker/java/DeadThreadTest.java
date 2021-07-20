@@ -15,3 +15,14 @@ public class DeadThreadTest {
         t2.start();
     }
 }
+
+class DeadThread {
+    static {
+        if (true) {
+            System.out.println(Thread.currentThread().getName() + "初始化当前类");
+            while (true) {
+
+            }
+        }
+    }
+}
