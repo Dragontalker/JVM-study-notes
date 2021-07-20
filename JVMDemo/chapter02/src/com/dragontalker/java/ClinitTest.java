@@ -9,4 +9,9 @@ public class ClinitTest {
     public static void main(String[] args) {
         int b = 2;
     }
+
+    public ClinitTest() {
+        a = 10;
+        int d = 10;
+    }
 }
