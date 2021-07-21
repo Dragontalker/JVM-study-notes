@@ -1,5 +1,6 @@
 package com.dragontalker.java;
 
+// 初始化线程死锁演示
 public class DeadThreadTest {
     public static void main(String[] args) {
         Runnable r = () -> {
