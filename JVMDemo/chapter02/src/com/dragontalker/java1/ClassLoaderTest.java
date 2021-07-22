@@ -11,7 +11,7 @@ public class ClassLoaderTest {
         ClassLoader extClassLoader = systemClassLoader.getParent();
         System.out.println(extClassLoader); // sun.misc.Launcher$ExtClassLoader@1540e19d
 
-        // 获取其上层
+        // 获取其上层: 获取不到引导类加载器
         ClassLoader bootstrapClassLoader = extClassLoader.getParent();
         System.out.println(bootstrapClassLoader); // null
 
@@ -19,6 +19,7 @@ public class ClassLoaderTest {
         ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
         System.out.println(classLoader); // sun.misc.Launcher$AppClassLoader@18b4aac2
 
+        // 证明了: String类使用引导类加载器进行加载的 ---> Java的核心类库都是
         ClassLoader classLoader1 = String.class.getClassLoader();
         System.out.println(classLoader1); // null
     }
