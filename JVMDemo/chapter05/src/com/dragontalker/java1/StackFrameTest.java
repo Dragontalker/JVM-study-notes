@@ -4,6 +4,8 @@ public class StackFrameTest {
 
     public static void main(String[] args) {
 
+        StackFrameTest test = new StackFrameTest();
+        test.method1();
     }
 
     public void method1() {
@@ -15,9 +17,9 @@ public class StackFrameTest {
     public int method2() {
         System.out.println("method2()开始执行...");
         int i = 10;
-        method3();
+        int m = (int)method3();
         System.out.println("method2()即将结束...");
-        return i;
+        return i + m;
     }
 
     public double method3() {
