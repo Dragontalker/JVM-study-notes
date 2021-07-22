@@ -10,5 +10,9 @@ public class ClassLoaderTest {
         // 获取其上层: 扩展类加载器
         ClassLoader extClassLoader = systemClassLoader.getParent();
         System.out.println(extClassLoader); // sun.misc.Launcher$ExtClassLoader@1540e19d
+
+        // 获取其上层
+        ClassLoader bootstrapClassLoader = extClassLoader.getParent();
+        System.out.println(bootstrapClassLoader); // null
     }
 }
