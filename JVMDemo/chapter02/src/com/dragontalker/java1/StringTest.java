@@ -7,5 +7,8 @@ public class StringTest {
         // 这里体现的是双亲委派机制
         String str = new java.lang.String();
         System.out.println("Hello, world!");
+
+        StringTest test = new StringTest();
+        System.out.println(test.getClass().getClassLoader()); // sun.misc.Launcher$AppClassLoader@18b4aac2
     }
 }
