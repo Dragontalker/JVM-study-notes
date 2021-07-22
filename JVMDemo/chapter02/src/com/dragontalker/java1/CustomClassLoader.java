@@ -22,6 +22,8 @@ public class CustomClassLoader extends ClassLoader{
     }
 
     private byte[] getClassFromCustomPath(String name) {
+        // 从自定义路径中加载指定类: 细节省略
+
         return null;
     }
 }
