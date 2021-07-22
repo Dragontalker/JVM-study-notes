@@ -1,5 +1,7 @@
 package com.dragontalker.java1;
 
+import sun.security.ec.CurveDB;
+
 import java.net.URL;
 import java.security.Provider;
 
@@ -23,5 +25,10 @@ public class ClassLoaderTest1 {
         for (String path : extDirs.split(";")) {
             System.out.println(path);
         }
+
+        // 从上面的路径中随意选择一个类, 来看看他的类加载器是什么
+        // sun.misc.Launcher$ExtClassLoader@29453f44: 扩展类加载器
+        ClassLoader classLoader1 = CurveDB.class.getClassLoader();
+        System.out.println(classLoader1); // sun.misc.Launcher$ExtClassLoader@29453f44
     }
 }
