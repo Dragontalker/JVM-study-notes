@@ -1,5 +1,10 @@
 package com.dragontalker.java1;
 
+/**
+ * 方法的结束方式分为两种:
+ *  1. 正常结束: 以return为代表
+ *  2. 方法执行中出现为捕获处理的异常, 以抛出异常的方式结束
+ */
 public class StackFrameTest {
 
     public static void main(String[] args) {
