@@ -23,7 +23,7 @@ public class StackFrameTest {
         System.out.println("method1()开始执行...");
         method2();
         System.out.println("method1()执行结束...");
-        System.out.println(10/0);
+        //System.out.println(10/0);
     }
 
     public int method2() {
