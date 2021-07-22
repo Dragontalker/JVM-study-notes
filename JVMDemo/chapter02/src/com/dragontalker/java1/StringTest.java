@@ -3,8 +3,9 @@ package com.dragontalker.java1;
 public class StringTest {
 
     public static void main(String[] args) {
-
-        String str = new String();
+        // 执行的还是java本身的String而不是我们自定义的java.lang.String
+        // 这里体现的是双亲委派机制
+        String str = new java.lang.String();
         System.out.println("Hello, world!");
     }
 }
