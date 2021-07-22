@@ -14,5 +14,9 @@ public class ClassLoaderTest {
         // 获取其上层
         ClassLoader bootstrapClassLoader = extClassLoader.getParent();
         System.out.println(bootstrapClassLoader); // null
+
+        // 对于用户自定义类来说:
+        ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
+        System.out.println(classLoader); // sun.misc.Launcher$AppClassLoader@18b4aac2
     }
 }
