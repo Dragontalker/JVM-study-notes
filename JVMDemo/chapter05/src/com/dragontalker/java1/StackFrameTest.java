@@ -4,9 +4,14 @@ public class StackFrameTest {
 
     public static void main(String[] args) {
 
-        StackFrameTest test = new StackFrameTest();
-        test.method1();
-        System.out.println("main()正常结束");
+        try {
+            StackFrameTest test = new StackFrameTest();
+            test.method1();
+        } catch (ArithmeticException e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("main()正常结束");
+        }
     }
 
     public void method1() {
