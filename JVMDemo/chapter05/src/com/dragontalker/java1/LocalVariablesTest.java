@@ -13,7 +13,7 @@ public class LocalVariablesTest {
 
     public void test1() {
         Date date = new Date();
-        String name1 = "dragontalker.com";
+        String name1 = " dragontalker.com";
         String info = test2(date, name1);
         System.out.println(date + name1);
     }
