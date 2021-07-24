@@ -47,7 +47,8 @@ public class LocalVariablesTest {
      *
      *  按照在类中声明的位置分:
      *      1. 成员变量: 在使用前, 都经历过默认初始化赋值
-     *          - 类变量:
+     *          - 类变量: linking的prepare阶段: 给类变量默认赋值
+     *                   initialization阶段: 给类变量显示赋值及给静态代码块赋值
      *          - 实例变量:
      *      2. 局部变量
      */
