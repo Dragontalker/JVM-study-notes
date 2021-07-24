@@ -54,6 +54,7 @@ public class LocalVariablesTest {
      */
     public void test5Temp() {
         int num;
-        //System.out.println(num); // 错误信息: Variable 'num' might not have been initialized
+        //System.out.println(num);
+        // 错误信息: Variable 'num' might not have been initialized
     }
 }
