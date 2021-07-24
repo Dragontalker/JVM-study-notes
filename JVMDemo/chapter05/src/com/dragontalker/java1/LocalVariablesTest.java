@@ -52,4 +52,8 @@ public class LocalVariablesTest {
      *          - 实例变量: 随着对象的创建, 会在堆空间中分配实例变量空间, 并进行默认赋值
      *      2. 局部变量: 在使用前, 必须要进行显示赋值! 否则, 编译不通过!
      */
+    public void test5Temp() {
+        int num;
+        //System.out.println(num); // 错误信息: Variable 'num' might not have been initialized
+    }
 }
