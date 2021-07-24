@@ -36,5 +36,7 @@ public class LocalVariablesTest {
             int b = 0;
             b = a + 1;
         }
+        // 变量c使用之前已经销毁的变量b占据的slot位置
+        int c = a + 1;
     }
 }
