@@ -33,5 +33,11 @@ public class OperandStackTest {
         int i2 = 10;
         ++i2;
 
+        // 第二类问题:
+        int i3 = 10;
+        int i4 = i3++;
+
+        int i5 = 10;
+        int i6 = ++i5;
     }
 }
