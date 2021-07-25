@@ -21,4 +21,17 @@ public class OperandStackTest {
         int i = getSum();
         int j = 10;
     }
+
+    /*
+    程序员面试过程中, 常见的i++和++i的区别
+     */
+    public void add() {
+        // 第一类问题:
+        int i1 = 10;
+        i1++;
+
+        int i2 = 10;
+        ++i2;
+
+    }
 }
