@@ -28,6 +28,7 @@ public class Son extends Father{
         this();
     }
 
+    // 不是重写的父类方法, 因为静态方法不能被重写
     public static void showStatic(String str) {
         System.out.println("son " + str);
     }
@@ -38,5 +39,20 @@ public class Son extends Father{
 
     public void show() {
         showStatic("atguigu.com");
+        super.showStatic("good!");
+        showPrivate("hello!");
+        super.showCommon();
+        showFinal();
+        showCommon();
+        info();
+
+        MethodInterface in = null;
+        in.methodA();
     }
+
+    public void info() {}
+}
+
+interface MethodInterface {
+    void methodA();
 }
