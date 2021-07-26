@@ -55,6 +55,7 @@ public class Son extends Father{
         //invokespecial, 一定确定父类的引用, 就会明确为非虚方法
         super.showFinal();
 
+        //invokevirtual, 同理, 没有明确引用父类, 被视为非虚方法
         showCommon();
         info();
 
