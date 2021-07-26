@@ -24,4 +24,11 @@ public class StringBuilderTest {
         sBuilder.append("b");
         //...
     }
+
+    public static StringBuilder method3() {
+        StringBuilder s1 = new StringBuilder();
+        s1.append("a");
+        s1.append("b");
+        return s1;
+    }
 }
