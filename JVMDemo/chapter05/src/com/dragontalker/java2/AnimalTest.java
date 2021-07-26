@@ -41,10 +41,10 @@ class Cat extends Animal implements Huntable {
 
 public class AnimalTest {
     public void showAnimal(Animal animal) {
-        animal.eat();
+        animal.eat(); // 表现为: 晚期绑定
     }
 
     public void showHunt(Huntable huntable) {
-        huntable.hunt();
+        huntable.hunt(); // 表现为: 晚期绑定
     }
 }
