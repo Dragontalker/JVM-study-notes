@@ -13,5 +13,15 @@ class Dog {
     }
 }
 
+class Cat implements Friendly {
+    public void eat() {}
+
+    public void sayHello() {}
+
+    public void sayGoodbye() {}
+
+    protected void finalize() {}
+}
+
 public class VirtualMethodTable {
 }
