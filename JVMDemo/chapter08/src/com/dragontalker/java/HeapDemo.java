@@ -1,5 +1,8 @@
 package com.dragontalker.java;
 
+/**
+ * -Xms10m -Xmx10m
+ */
 public class HeapDemo {
     public static void main(String[] args) {
         System.out.println("start...");
