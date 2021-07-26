@@ -25,3 +25,16 @@ class Dog extends Animal implements Huntable {
         System.out.println("捕食耗子, 多管闲事");
     }
 }
+
+class Cat extends Animal implements Huntable {
+
+    @Override
+    public void eat() {
+        System.out.println("猫吃鱼");
+    }
+
+    @Override
+    public void hunt() {
+        System.out.println("捕食耗子, 天经地义");
+    }
+}
