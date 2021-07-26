@@ -11,5 +11,11 @@ public class HeapSpaceInitial {
 
         // 返回Java虚拟机中视图使用的最大堆内存量
         long maxMemory = Runtime.getRuntime().maxMemory() / 1024 / 1024;
+
+        System.out.println("-Xms : " + initialMemory + "M");
+        System.out.println("-Xmx : " + maxMemory + "M");
+
+        System.out.println("系统初始内存大小为: " + initialMemory * 64.0 / 1024 + "G");
+        System.out.println("系统最大内存大小为: " + maxMemory * 4.0 / 1024 + "G");
     }
 }
