@@ -38,10 +38,17 @@ public class Son extends Father{
     }
 
     public void show() {
+        //invokestatic
         showStatic("atguigu.com");
+        //invokestatic
         super.showStatic("good!");
+
+        //invokespecial
         showPrivate("hello!");
+        //invokespecial
         super.showCommon();
+
+
         showFinal();
         showCommon();
         info();
