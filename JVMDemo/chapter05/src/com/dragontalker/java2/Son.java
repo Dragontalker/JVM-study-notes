@@ -21,10 +21,12 @@ class Father {
 public class Son extends Father{
 
     public Son() {
+        //invokespecial
         super();
     }
 
     public Son(int age) {
+        //invokespecial
         this();
     }
 
