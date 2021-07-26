@@ -31,4 +31,15 @@ public class StringBuilderTest {
         s1.append("b");
         return s1;
     }
+
+    public static void main(String[] args) {
+        StringBuilder s = new StringBuilder();
+
+        new Thread(() -> {
+            s.append("a");
+            s.append("b");
+        }).start();
+
+        method2(s);
+    }
 }
