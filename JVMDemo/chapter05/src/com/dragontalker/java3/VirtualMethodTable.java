@@ -23,5 +23,13 @@ class Cat implements Friendly {
     protected void finalize() {}
 }
 
+class CockerSpaniel extends Dog implements Friendly {
+    public void sayHello() {
+        super.sayHello();
+    }
+
+    public void sayGoodbye() {}
+}
+
 public class VirtualMethodTable {
 }
