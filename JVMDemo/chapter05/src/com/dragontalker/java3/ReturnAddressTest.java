@@ -1,5 +1,7 @@
 package com.dragontalker.java3;
 
+import java.util.Date;
+
 public class ReturnAddressTest {
     public boolean methodBoolean() {
         return false;
@@ -27,5 +29,25 @@ public class ReturnAddressTest {
 
     public float methodFloat() {
         return 0.0f;
+    }
+
+    public double methodDouble() {
+        return 0.0;
+    }
+
+    public String methodString() {
+        return null;
+    }
+
+    public Date methodDate() {
+        return null;
+    }
+
+    public void methodVoid() {
+
+    }
+
+    static {
+        int i = 10;
     }
 }
