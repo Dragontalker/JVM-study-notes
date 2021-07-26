@@ -21,6 +21,10 @@ class Cat implements Friendly {
     public void sayGoodbye() {}
 
     protected void finalize() {}
+
+    public String toString() {
+        return "cat";
+    }
 }
 
 class CockerSpaniel extends Dog implements Friendly {
