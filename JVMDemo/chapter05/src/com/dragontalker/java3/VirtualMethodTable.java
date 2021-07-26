@@ -5,5 +5,13 @@ interface Friendly {
     void sayGoodbye();
 }
 
+class Dog {
+    public void sayHello() {}
+
+    public String toString() {
+        return "Dog";
+    }
+}
+
 public class VirtualMethodTable {
 }
