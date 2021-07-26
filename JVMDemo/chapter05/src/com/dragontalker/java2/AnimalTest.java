@@ -28,8 +28,17 @@ class Dog extends Animal implements Huntable {
 
 class Cat extends Animal implements Huntable {
 
+    public Cat() {
+        super(); // 早期绑定
+    }
+
+    public Cat(String name) {
+        this(); // 早期绑定
+    }
+
     @Override
     public void eat() {
+        super.eat(); // 早期绑定
         System.out.println("猫吃鱼");
     }
 
