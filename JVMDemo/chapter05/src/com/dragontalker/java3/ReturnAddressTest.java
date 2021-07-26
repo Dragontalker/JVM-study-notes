@@ -1,5 +1,6 @@
 package com.dragontalker.java3;
 
+import java.io.IOException;
 import java.util.Date;
 
 public class ReturnAddressTest {
@@ -49,5 +50,14 @@ public class ReturnAddressTest {
 
     static {
         int i = 10;
+    }
+
+    public void method2() {
+
+        try {
+            method1();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
