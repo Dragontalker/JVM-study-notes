@@ -38,3 +38,13 @@ class Cat extends Animal implements Huntable {
         System.out.println("捕食耗子, 天经地义");
     }
 }
+
+public class AnimalTest {
+    public void showAnimal(Animal animal) {
+        animal.eat();
+    }
+
+    public void showHunt(Huntable huntable) {
+        huntable.hunt();
+    }
+}
