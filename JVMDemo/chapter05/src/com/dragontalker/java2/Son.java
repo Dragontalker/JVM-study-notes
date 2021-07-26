@@ -18,5 +18,25 @@ class Father {
     }
 }
 
-public class Son {
+public class Son extends Father{
+
+    public Son() {
+        super();
+    }
+
+    public Son(int age) {
+        this();
+    }
+
+    public static void showStatic(String str) {
+        System.out.println("son " + str);
+    }
+
+    private void showPrivate(String str) {
+        System.out.println("son private " + str);
+    }
+
+    public void show() {
+        showStatic("atguigu.com");
+    }
 }
