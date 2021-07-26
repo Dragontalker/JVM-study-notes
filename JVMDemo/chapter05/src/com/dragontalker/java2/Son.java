@@ -50,8 +50,11 @@ public class Son extends Father{
         //invokespecial
         super.showCommon();
 
-
+        //invokevirtual, 但不是虚方法, 因为此方法声明有final, 不能被子类重写, 所以也认为此方法是非虚方法
         showFinal();
+        //invokespecial, 一定确定父类的引用, 就会明确为非虚方法
+        super.showFinal();
+
         showCommon();
         info();
 
