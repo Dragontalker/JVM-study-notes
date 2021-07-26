@@ -2,6 +2,8 @@ package com.dragontalker.java;
 
 /**
  * -Xms 用来设置堆空间(年轻代+老年代) 的初始内存大小
+ *      - X 是JVM的运行参数
+ *      - ms 是memory start
  */
 public class HeapSpaceInitial {
     public static void main(String[] args) {
