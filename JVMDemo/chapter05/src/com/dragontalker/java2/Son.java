@@ -60,6 +60,7 @@ public class Son extends Father{
         info();
 
         MethodInterface in = null;
+        //invokeinterface
         in.methodA();
     }
 
