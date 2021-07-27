@@ -10,7 +10,10 @@ package com.dragontalker.java1;
  * -XX:SurvivorRatio: 设置新生代中Eden和S0/S1空间的比例
  * -XX:MaxTenuringThreshold: 设置新生代垃圾的最大年龄
  * -XX:+PrintGCDetails: 输出详细的GC处理日志
- *
+ * 打印GC简要信息:
+ *  1. -XX:+PrintGC
+ *  2. -verbose:gc
+ * -XX:HandlePromotionFailure: 是否设置空间分配担保
  */
 public class HeapArgsTest {
     public static void main(String[] args) {
