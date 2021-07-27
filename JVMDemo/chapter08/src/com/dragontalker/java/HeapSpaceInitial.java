@@ -34,10 +34,10 @@ public class HeapSpaceInitial {
         //System.out.println("系统初始内存大小为: " + initialMemory * 64.0 / 1024 + "G");
         //System.out.println("系统最大内存大小为: " + maxMemory * 4.0 / 1024 + "G");
 
-        try {
-            Thread.sleep(1000000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 }
