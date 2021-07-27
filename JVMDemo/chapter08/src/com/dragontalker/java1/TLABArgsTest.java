@@ -1,7 +1,8 @@
 package com.dragontalker.java1;
 
 /**
- * 测试-XX:UserTLAB参数是否开启的情况
+ * 测试-XX:UserTLAB参数是否开启的情况:
+ *  - 默认是开启的, 占Eden大于1%的空间
  *
  */
 public class TLABArgsTest {
