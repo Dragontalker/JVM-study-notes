@@ -1,5 +1,9 @@
 package com.dragontalker.java2;
 
+/**
+ * 栈上分配测试
+ * -Xmx1G -Xms1G -XX:-DoEscapeAnalysis -XX:+PrintGCDetails
+ */
 public class StackAllocation {
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
@@ -21,7 +25,7 @@ public class StackAllocation {
     }
 
     private static void alloc() {
-        User user = new User();
+        User user = new User(); // 未发生逃逸
     }
 
     static class User {
