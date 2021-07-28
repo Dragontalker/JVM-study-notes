@@ -5,6 +5,12 @@ public class ScalarReplace {
         public int id;
         public String name;
     }
+
+    public static void alloc() {
+        User u = new User();
+        u.id = 5;
+        u.name = "www.atguigu.com";
+    }
 }
 
 /*
