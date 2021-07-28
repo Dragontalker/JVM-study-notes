@@ -19,4 +19,12 @@ public class StackAllocation {
             e.printStackTrace();
         }
     }
+
+    private static void alloc() {
+        User user = new User();
+    }
+
+    static class User {
+
+    }
 }
