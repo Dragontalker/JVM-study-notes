@@ -1,5 +1,8 @@
 package com.dragontalker.java;
 
+/**
+ * 设置堆空间的大小: -Xms600m -Xmx600m
+ */
 public class MethodAreaDemo {
     public static void main(String[] args) {
         System.out.println("start...");
