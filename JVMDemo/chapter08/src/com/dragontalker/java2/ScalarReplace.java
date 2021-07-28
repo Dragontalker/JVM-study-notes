@@ -1,5 +1,9 @@
 package com.dragontalker.java2;
 
+/**
+ * 标量替换测试
+ * -Xmx100m -Xms100m -XX:+DoEscapeAnalysis -XX:+PrintGC -XX:-EliminateAllocations
+ */
 public class ScalarReplace {
     public static class User {
         public int id;
