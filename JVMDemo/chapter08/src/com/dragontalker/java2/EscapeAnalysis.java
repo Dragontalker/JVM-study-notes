@@ -10,4 +10,11 @@ public class EscapeAnalysis {
     public EscapeAnalysis getInstance() {
         return obj == null? new EscapeAnalysis() : obj;
     }
+
+    /*
+    为成员属性赋值, 发生逃逸
+     */
+    public void setObj() {
+        this.obj = new EscapeAnalysis();
+    }
 }
