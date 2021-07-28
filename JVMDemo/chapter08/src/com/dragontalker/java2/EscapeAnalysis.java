@@ -37,5 +37,6 @@ public class EscapeAnalysis {
      */
     public void useEscapeAnalysis1() {
         EscapeAnalysis e = getInstance();
+        //getInstance().xxx()同样会发生逃逸
     }
 }
