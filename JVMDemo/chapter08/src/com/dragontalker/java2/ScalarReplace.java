@@ -7,7 +7,7 @@ public class ScalarReplace {
     }
 
     public static void alloc() {
-        User u = new User();
+        User u = new User(); // 未发生逃逸
         u.id = 5;
         u.name = "www.atguigu.com";
     }
