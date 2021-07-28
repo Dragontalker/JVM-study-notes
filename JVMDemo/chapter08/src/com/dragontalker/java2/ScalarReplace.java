@@ -1,6 +1,10 @@
 package com.dragontalker.java2;
 
 public class ScalarReplace {
+    public static class User {
+        public int id;
+        public String name;
+    }
 }
 
 /*
