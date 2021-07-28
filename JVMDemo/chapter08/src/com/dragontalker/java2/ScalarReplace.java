@@ -11,6 +11,15 @@ public class ScalarReplace {
         u.id = 5;
         u.name = "www.atguigu.com";
     }
+
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < 10000000; i++) {
+            alloc();
+        }
+        long end = System.currentTimeMillis();
+        System.out.println("花费的时间为: " + (end - start) + "ms");
+    }
 }
 
 /*
