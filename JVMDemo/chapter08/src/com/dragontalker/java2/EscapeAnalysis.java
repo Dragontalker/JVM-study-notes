@@ -23,7 +23,12 @@ public class EscapeAnalysis {
         this.obj = new EscapeAnalysis();
     }
 
+    // 思考: 如果当前的obj引用声明为static的, 还会发生逃逸吗?
+    //      - 仍然会发生逃逸
     /*
-    对象的作用域仅在
+    对象的作用域仅在当前方法有效, 没有发生逃逸
      */
+    public void useEscapeAnalysis() {
+        EscapeAnalysis e = getInstance();
+    }
 }
