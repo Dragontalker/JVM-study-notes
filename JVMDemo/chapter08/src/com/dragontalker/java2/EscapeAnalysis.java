@@ -3,7 +3,7 @@ package com.dragontalker.java2;
 /**
  * 逃逸分析
  *
- * 如何快速的判断是否发生了逃逸分析, 大家就看new的对象是否有可能在方法外被调用
+ * 如何快速的判断是否发生了逃逸分析, 大家就看new的对象实体是否有可能在方法外被调用
  */
 public class EscapeAnalysis {
 
@@ -29,6 +29,13 @@ public class EscapeAnalysis {
     对象的作用域仅在当前方法有效, 没有发生逃逸
      */
     public void useEscapeAnalysis() {
+        EscapeAnalysis e = new EscapeAnalysis();
+    }
+
+    /*
+    引用成员变量的值, 发生逃逸
+     */
+    public void useEscapeAnalysis1() {
         EscapeAnalysis e = getInstance();
     }
 }
