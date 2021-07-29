@@ -13,6 +13,17 @@ public class MethodInnerStrucTest  extends Object implements Comparable<String>,
         System.out.println("count = " + count);
     }
 
+    public static int test2(int cal) {
+        int result = 0;
+        try {
+            int value = 30;
+            result = value / cal;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
     @Override
     public int compareTo(String o) {
         return 0;
